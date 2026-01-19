@@ -164,6 +164,7 @@ to gain additional acceleration through operator fusion and generation of optimi
 similarly to CPU compilation that we tried before.
 
 ![torch_compile_1](images/with_torch_compile.png)
+source - https://smallest.ai/blog/inference-optimization-how-to-optimize-a-model-for-latency
 
 ### CUDA Graphs
 
@@ -177,12 +178,14 @@ compiled_model_with_cudagraphs = torch.compile(model, mode="max-autotune")
 ```
 
 ![torch_compile_2](images/with_torch_compile_with_cuda_graphs.png)
+source - https://smallest.ai/blog/inference-optimization-how-to-optimize-a-model-for-latency
 
 The `max-autotune` mode of PyTorch compilation can generate entirely new operations on the fly. In this mode,
 PyTorch creates several Triton kernel implementations for each operation, benchmarks their performance, and
 selects the fastest one.
 
 ![torch_compile_3](images/with_torch_compile_with_cuda_kernels.png)
+source - https://smallest.ai/blog/inference-optimization-how-to-optimize-a-model-for-latency
 
 These automatically generated kernels often outperform naive operations, or even handwritten generic 
 implementations, because they are tailored for a given model. For example, tensor shapes are known and
