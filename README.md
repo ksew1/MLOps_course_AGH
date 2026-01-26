@@ -14,3 +14,4 @@ Topics:
 11. [Deployment & CI/CD](lab11) - GitHub Actions
 12. [ML pipelines](lab12) - Apache Airflow
 13. [LLMOps](lab13) - vLLM, Model Context Protocol (MCP), guardrails
+14. [ML system design](lab14)
