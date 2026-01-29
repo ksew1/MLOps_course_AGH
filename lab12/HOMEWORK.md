@@ -1,6 +1,6 @@
 # Laboratory 12 homework
 
-Homework is refactoring the code from lab 2 homework, i.e. NYC taxi data preparation.
+Homework is refactoring the code from Polars lab homework, i.e. NYC taxi data preparation.
 The goal is to build proper ML pipelines for gathering & preparing the dataset, and training the
 predictive model.
 
